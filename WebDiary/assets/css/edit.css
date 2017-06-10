@@ -1,0 +1,54 @@
+body{
+	min-width: 300px;
+}
+input[type=text] {
+	width: 100%;
+	padding: 0 8px;
+}
+.input-area {
+	padding: 20px 0;
+}
+.input-container {
+	margin: 10px 0;
+}
+#attachment-container {
+	overflow: hidden;
+}
+#prev-attachment {
+	flex-grow: 1; 
+}
+#prev-attachment, #attachment{
+	word-break: break-all;
+}
+
+.btn-edit {
+	min-width: 42px;
+	min-height: 42px;
+	margin-left: 8px;
+}
+.btn-edit  * {
+	line-height: 36px;
+}
+
+#prev-attachment-container + #attachment-container	{
+	display: none;
+}
+#prev-attachment-container.addNew {
+	display: none;
+}
+#prev-attachment-container.addNew + #attachment-container	{
+	display: block;
+}
+#content {
+	border: 1px solid black;
+	padding: 8px;
+	min-height: 200px;
+}
+.toolbar {
+	height: 48px;
+}
+.btn-save {
+	height: 36px;
+	line-height: 36px;
+	font-size: 24px;
+}

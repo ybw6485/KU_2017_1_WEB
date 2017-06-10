@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+	<head>
+		<meta charset="UTF-8"/>
+		<title>WEB DIARY</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
+
+		<link rel="stylesheet" type="text/css" href="./assets/css/common.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/list.css">
+
+		<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+		<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-storage.js"></script>
+
+		<script type="text/javascript" src="./assets/js/common.js"></script>
+		<script type="text/javascript" src="./assets/js/list.js"></script>
+	</head>
+
+	<body>
+		<form id="paging">
+			<input id="next" type="hidden" value="Y"/>
+			<input id="prev" type="hidden" value=""/>
+		</form>
+		<div class="container-fluid toolbar">
+			<div class="search flex-div">
+				<input id="search" type="text" placeholder=""/>
+				<button onclick="search();" id="btn-search" class="btn btn-primary btn-search" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>">
+					<i class="material-icons">search</i>
+				</button>
+				<button id="btn-add" class="btn btn-success btn-add">
+					<i class="material-icons">add</i>
+				</button>
+			</div>
+			
+		</div>
+		<div class="container flex-div" style="width: 100%;">
+			<div id="list-container" class="list-container"></div>
+			<div id="detail"></div>
+		</div>
+	</body>
+</html>

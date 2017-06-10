@@ -1,0 +1,22 @@
+.btn {
+	font-weight: bold;
+	padding: 0;
+}
+.flex-div {
+	display: flex;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a.attachment {
+	text-decoration: none;
+	color: #9a9a9a;
+	font-weight: bold;
+	display: flex;
+	text-align: left;
+}
+a.attachment * {
+	margin: 4px;
+}
